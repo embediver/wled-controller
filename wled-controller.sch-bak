@@ -115,7 +115,7 @@ U 1 1 615F9049
 P 5550 2350
 F 0 "U3" H 5250 3300 50  0000 C CNN
 F 1 "ESP-07" H 5250 3200 50  0000 C CNN
-F 2 "RF_Module:ESP-07" H 5550 2350 50  0001 C CNN
+F 2 "wled-controller:ESP-07-tht" H 5550 2350 50  0001 C CNN
 F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5200 2450 50  0001 C CNN
 	1    5550 2350
 	1    0    0    -1  

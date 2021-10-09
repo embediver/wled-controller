@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /mnt/srvmarvin/devel/pcb-design/wled-controller/wled-controller.sch)
-    (date "Fr 08 Okt 2021 12:40:30 CEST")
+    (date "Sa 09 Okt 2021 14:27:04 CEST")
     (tool "Eeschema 5.1.10-6.fc33")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -38,7 +38,7 @@
       (tstamp 615F6F33))
     (comp (ref U3)
       (value ESP-07)
-      (footprint wled-controller:ESP-07-tht)
+      (footprint ESP8266:ESP-07_tht)
       (datasheet http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf)
       (libsource (lib RF_Module) (part ESP-07) (description "802.11 b/g/n Wi-Fi Module"))
       (sheetpath (names /) (tstamps /))
