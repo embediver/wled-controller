@@ -115,7 +115,7 @@ U 1 1 615F9049
 P 5550 2350
 F 0 "U3" H 5250 3300 50  0000 C CNN
 F 1 "ESP-07" H 5250 3200 50  0000 C CNN
-F 2 "ESP8266:ESP-07_tht" H 5550 2350 50  0001 C CNN
+F 2 "ESP8266:ESP-07v2" H 5550 2350 50  0001 C CNN
 F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5200 2450 50  0001 C CNN
 	1    5550 2350
 	1    0    0    -1  
@@ -301,7 +301,7 @@ Wire Wire Line
 Text GLabel 6700 2150 2    50   Output ~ 0
 ESP_SW1
 Text GLabel 6700 2350 2    50   Input ~ 0
-ESP_RELAY
+ESP_PS_ON
 Wire Wire Line
 	6150 2150 6700 2150
 Wire Wire Line
@@ -652,8 +652,8 @@ F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 9600 2700 50  0001 C CNN
 	1    9600 2700
 	0    -1   1    0   
 $EndComp
-Text GLabel 8950 2550 0    50   Output ~ 0
-ESP_RELAY
+Text GLabel 7800 2800 0    50   Output ~ 0
+ESP_PS_ON
 $Comp
 L Device:R R7
 U 1 1 6177C7F9
@@ -694,8 +694,6 @@ F 3 "" H 9450 2250 50  0001 C CNN
 	1    9450 2250
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9450 2550 8950 2550
 Connection ~ 9450 2550
 NoConn ~ 4950 2150
 NoConn ~ 6150 2550
@@ -943,7 +941,7 @@ F 3 "" H 2250 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1800 3500 2    50   Output ~ 0
-RELAY_OUT
+PS_ON
 Wire Wire Line
 	1400 3500 1800 3500
 $Comp
@@ -969,7 +967,7 @@ Wire Wire Line
 Text GLabel 10250 1400 2    50   Input ~ 0
 DATA_OUT
 Text GLabel 10250 2550 2    50   Input ~ 0
-RELAY_OUT
+PS_ON
 Text GLabel 10250 3650 2    50   Input ~ 0
 SWITCH_IN
 $Comp
@@ -1136,4 +1134,70 @@ Wire Wire Line
 Connection ~ 3400 3100
 Wire Wire Line
 	3400 3100 3650 3100
+$Comp
+L Transistor_BJT:BC817 Q1
+U 1 1 6164A9B5
+P 8750 2800
+F 0 "Q1" H 8941 2846 50  0000 L CNN
+F 1 "BC817" H 8941 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8950 2725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 8750 2800 50  0001 L CNN
+	1    8750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 61655DD1
+P 8000 3100
+F 0 "R9" H 8070 3146 50  0000 L CNN
+F 1 "10k" H 8070 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7930 3100 50  0001 C CNN
+F 3 "~" H 8000 3100 50  0001 C CNN
+	1    8000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 61656A82
+P 8400 2800
+F 0 "R10" V 8193 2800 50  0000 C CNN
+F 1 "1k2" V 8284 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8330 2800 50  0001 C CNN
+F 3 "~" H 8400 2800 50  0001 C CNN
+	1    8400 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 2600 8850 2550
+Wire Wire Line
+	8850 2550 9450 2550
+Wire Wire Line
+	7800 2800 8000 2800
+Wire Wire Line
+	8000 2950 8000 2800
+Connection ~ 8000 2800
+Wire Wire Line
+	8000 2800 8250 2800
+$Comp
+L power:GND #PWR0138
+U 1 1 61671A25
+P 8000 3250
+F 0 "#PWR0138" H 8000 3000 50  0001 C CNN
+F 1 "GND" H 8005 3077 50  0000 C CNN
+F 2 "" H 8000 3250 50  0001 C CNN
+F 3 "" H 8000 3250 50  0001 C CNN
+	1    8000 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0139
+U 1 1 61671E49
+P 8850 3000
+F 0 "#PWR0139" H 8850 2750 50  0001 C CNN
+F 1 "GND" H 8855 2827 50  0000 C CNN
+F 2 "" H 8850 3000 50  0001 C CNN
+F 3 "" H 8850 3000 50  0001 C CNN
+	1    8850 3000
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
