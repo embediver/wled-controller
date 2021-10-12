@@ -912,17 +912,6 @@ F 3 "~" H 1200 3400 50  0001 C CNN
 	1    1200 3400
 	-1   0    0    1   
 $EndComp
-$Comp
-L Diode:1N4001 D1
-U 1 1 61976AAF
-P 1900 3200
-F 0 "D1" H 1900 2983 50  0000 C CNN
-F 1 "1N4001" H 1900 3074 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1900 3025 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1900 3200 50  0001 C CNN
-	1    1900 3200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1400 3200 1750 3200
 Wire Wire Line
@@ -1199,5 +1188,16 @@ F 2 "" H 8850 3000 50  0001 C CNN
 F 3 "" H 8850 3000 50  0001 C CNN
 	1    8850 3000
 	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5817 D1
+U 1 1 6166855F
+P 1900 3200
+F 0 "D1" H 1900 2983 50  0000 C CNN
+F 1 "1N5817" H 1900 3074 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1900 3025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1900 3200 50  0001 C CNN
+	1    1900 3200
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
