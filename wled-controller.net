@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /mnt/srvmarvin/devel/pcb-design/wled-controller/wled-controller.sch)
-    (date "Di 12 Okt 2021 11:34:42 CEST")
+    (source /mnt/srvmarvin/devel/pcbs/wled-controller/wled-controller.sch)
+    (date "Mi 13 Okt 2021 18:05:23 CEST")
     (tool "Eeschema 5.1.10-6.fc33")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -129,7 +129,7 @@
       (tstamp 6174CBCD))
     (comp (ref SW2)
       (value SW_Push)
-      (footprint Button_Switch_THT:SW_PUSH_6mm_H8mm)
+      (footprint Button_Switch_THT:SW_PUSH_6mm_H13mm)
       (datasheet ~)
       (libsource (lib Switch) (part SW_Push) (description "Push button switch, generic, two pins"))
       (sheetpath (names /) (tstamps /))
@@ -220,7 +220,7 @@
       (tstamp 619F1740))
     (comp (ref J3)
       (value Conn_01x05_Male)
-      (footprint Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x05_Male) (description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

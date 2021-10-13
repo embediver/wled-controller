@@ -1008,7 +1008,7 @@ U 1 1 61B2D44C
 P 5600 7100
 F 0 "J3" H 5708 7481 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 5708 7390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical" H 5600 7100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5600 7100 50  0001 C CNN
 F 3 "~" H 5600 7100 50  0001 C CNN
 	1    5600 7100
 	1    0    0    -1  
@@ -1190,10 +1190,10 @@ F 3 "" H 8850 3000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Diode:1N5817 D?
+L Diode:1N5817 D1
 U 1 1 6166855F
 P 1900 3200
-F 0 "D?" H 1900 2983 50  0000 C CNN
+F 0 "D1" H 1900 2983 50  0000 C CNN
 F 1 "1N5817" H 1900 3074 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1900 3025 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1900 3200 50  0001 C CNN
