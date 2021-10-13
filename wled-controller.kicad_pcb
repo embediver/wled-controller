@@ -1,9 +1,9 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.10-6.fc33)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.10-6.fc34)
 
   (general
     (thickness 1.6)
     (drawings 7)
-    (tracks 268)
+    (tracks 267)
     (zones 0)
     (modules 45)
     (nets 28)
@@ -30,7 +30,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -2459,10 +2459,6 @@
   (segment (start 91.41 92.5525) (end 93.4625 90.5) (width 1) (layer F.Cu) (net 1) (status 20))
   (segment (start 91.41 93.48) (end 91.41 92.5525) (width 1) (layer F.Cu) (net 1) (status 10))
   (segment (start 93.4625 90.4625) (end 93.4625 90.5) (width 1) (layer F.Cu) (net 1) (status 30))
-  (via (at 94.5 86.5) (size 1.8) (drill 0.6) (layers F.Cu B.Cu) (net 1))
-  (segment (start 93.5 90.4625) (end 93.5 87.5) (width 1) (layer F.Cu) (net 1) (status 10))
-  (segment (start 93.5 87.5) (end 94.5 86.5) (width 1) (layer F.Cu) (net 1))
-  (segment (start 93.4625 90.5) (end 93.5 90.4625) (width 1) (layer F.Cu) (net 1) (status 30))
   (segment (start 91.39 93.5) (end 91.41 93.48) (width 1) (layer F.Cu) (net 1) (status 30))
   (segment (start 89 93.5) (end 91.39 93.5) (width 1) (layer F.Cu) (net 1) (status 30))
   (segment (start 139.475 84.96) (end 139.475 86.23) (width 0.5) (layer F.Cu) (net 1) (status 30))
@@ -2491,6 +2487,9 @@
   (via (at 134.525 93.475) (size 1.8) (drill 0.6) (layers F.Cu B.Cu) (net 1))
   (segment (start 118 90.5) (end 118 93) (width 1) (layer F.Cu) (net 1) (tstamp 61646132) (status 10))
   (via (at 118 93) (size 1.8) (drill 0.6) (layers F.Cu B.Cu) (net 1) (tstamp 61646147))
+  (via (at 94.49999 87.63) (size 1.8) (drill 0.6) (layers F.Cu B.Cu) (net 1))
+  (segment (start 93.4625 90.5) (end 93.4625 88.66749) (width 1) (layer F.Cu) (net 1))
+  (segment (start 93.4625 88.66749) (end 94.49999 87.63) (width 1) (layer F.Cu) (net 1))
   (segment (start 82 86.5) (end 87 86.5) (width 2) (layer B.Cu) (net 2) (status 30))
   (segment (start 81.5 87) (end 82 86.5) (width 1) (layer B.Cu) (net 2) (status 30))
   (via (at 85.5 92) (size 1.8) (drill 0.6) (layers F.Cu B.Cu) (net 2))
