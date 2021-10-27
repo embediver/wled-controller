@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,5.1.10-6.fc33*%
-%TF.CreationDate,2021-10-13T18:18:04+02:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,5.1.10-6.fc34*%
+%TF.CreationDate,2021-10-28T01:07:33+02:00*%
 %TF.ProjectId,wled-controller,776c6564-2d63-46f6-9e74-726f6c6c6572,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,NonPlated,1,2,NPTH,Drill*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.10-6.fc33) date 2021-10-13 18:18:04*
+G04 Created by KiCad (PCBNEW 5.1.10-6.fc34) date 2021-10-28 01:07:33*
 %MOMM*%
 %LPD*%
 G01*
@@ -22,8 +22,8 @@ D10*
 %TO.C,REF\u002A\u002A*%
 X74000000Y-74000000D03*
 X74000000Y-106000000D03*
-X176000000Y-74000000D03*
-X176000000Y-106000000D03*
+X166000000Y-74000000D03*
+X166000000Y-106000000D03*
 D11*
-X150000000Y-90000000D03*
+X140000000Y-90000000D03*
 M02*
